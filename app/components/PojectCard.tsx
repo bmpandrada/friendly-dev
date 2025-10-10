@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import type { Project } from "~/types";
 
 const ProjectCard = ({project}: {project: Project}) => {
-    return ( <Link to={`/projects/${project.id}`} className="block transform transition hover:scale-[1.02]">
+    return ( <Link to={`/projects/${project.documentId}`} className="block transform transition hover:scale-[1.02]">
             <div className="bg-gray-600 border border-gray-700 rounded-lg overflow-hidden shadow-sm transition hover:shadow-md">
                     <img src={project.image} alt={project.title} 
                     className="w-full object-cover h-40"/>

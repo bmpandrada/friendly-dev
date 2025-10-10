@@ -11,7 +11,7 @@ const AboutPreview = () => {
       <div>
         <h2 className='text-2xl font-bold text-white mb-2'>👋 About Me</h2>
         <p className='text-gray-200 mb-4 max-w 4xl'>
-          I’m Bruce — a Frontend Developer experienced in React, Next.js, Tailwind CSS, Sass, and TypeScript.
+          I’m Bruce — a Web Developer experienced in React, Next.js, Bootstrap, Tailwind CSS, Sass, and TypeScript.
           I have hands-on knowledge of state management, CRUD operations, and building scalable components.
           Always eager to improve, I enjoy creating fast and interactive digital experiences.
         </p>

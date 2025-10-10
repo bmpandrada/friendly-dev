@@ -10,6 +10,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
+import WelcomeLoader from "./components/WelcomeLoader";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -49,12 +50,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {loader ? (
-          <div className="flex h-screen items-center justify-center">
-            <p className="text-2xl font-semibold animate-pulse mr-2">
-              Welcome To My Website...
-            </p>
-            <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-500"></div>
-          </div>
+          <WelcomeLoader />
         ) : (
           <>
             <Navbar />
